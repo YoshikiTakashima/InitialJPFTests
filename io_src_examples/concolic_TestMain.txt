@@ -1,0 +1,45 @@
+symbolic.min_int=-100
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+concolic.TestMain.main()
+
+====================================================== search started: 10/9/19 3:25 AM
+S1
+S1;S3
+S1;S4
+S1;S4
+S0
+S0;S3
+S0;S4
+S1
+S1;S3
+S1;S4
+ELSE
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=16,visited=0,backtracked=16,end=8
+search:             maxDepth=7,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=8
+heap:               new=373,released=74,maxLive=351,gcCycles=12
+instructions:       3399
+max memory:         240MB
+loaded code:        classes=60,methods=1293
+
+====================================================== search finished: 10/9/19 3:25 AM

@@ -1,0 +1,684 @@
+Running Symbolic PathFinder ...
+symbolic.dp=choco
+symbolic.string_dp_timeout_ms=0
+symbolic.string_dp=none
+symbolic.concolic=true
+symbolic.choco_time_bound=30000
+symbolic.max_pc_length=2147483647
+symbolic.max_pc_msec=0
+symbolic.bvlength=32
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+concolic.PowExample.main()
+
+====================================================== search started: 10/9/19 3:25 AM
+New sym int x_1_SYMINT min=-2147483648, max=2147483647
+New sym int y_2_SYMINT min=-2147483648, max=2147483647
+--------original PC------------0
+original pc constraint # = 1
+x_1_SYMINT <= CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 1
+x_1_SYMINT <= CONST_0
+concolicPC constraint # = 0
+simplePC constraint # = 1
+x_1_SYMINT <= CONST_0
+--------end after splitting------------
+numeric PC: constraint # = 1
+x_1_SYMINT <= CONST_0 -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+x_1_SYMINT[-2147483648] <= CONST_0
+### PCs: total:1 sat:1 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+x_1_SYMINT[-2147483648] <= CONST_0
+--------original PC------------0
+original pc constraint # = 1
+x_1_SYMINT[-2147483648] > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 1
+x_1_SYMINT[-2147483648] > CONST_0
+concolicPC constraint # = 0
+simplePC constraint # = 1
+x_1_SYMINT[-2147483648] > CONST_0
+--------end after splitting------------
+numeric PC: constraint # = 1
+x_1_SYMINT[-2147483648] > CONST_0 -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+x_1_SYMINT[2147483647] > CONST_0
+### PCs: total:2 sat:2 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+x_1_SYMINT[2147483647] > CONST_0
+--------original PC------------0
+original pc constraint # = 2
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 2
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 0
+simplePC constraint # = 2
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT
+--------end after splitting------------
+numeric PC: constraint # = 2
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 2
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647]
+### PCs: total:3 sat:3 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 2
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+x_1_SYMINT[2147483647] > CONST_0
+--------original PC------------0
+original pc constraint # = 3
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 3
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 0
+simplePC constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT
+--------end after splitting------------
+numeric PC: constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 3
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+### PCs: total:4 sat:4 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 3
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+x_1_SYMINT[2147483647] > CONST_0
+--------original PC------------0
+original pc constraint # = 4
+REAL_2 <  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 4
+REAL_2 <  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 1
+REAL_2 <  pow (REAL_3,CONST_2.0)
+simplePC constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT
+--------end after splitting------------
+numeric PC: constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 3
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+........................START SOLVING
+--------------------
+simplePC constraint # = 3
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+--------------------
+new PC constraint # = 4
+REAL_2[1.0] < CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+extraPC constraintsconstraint # = 1
+REAL_3[1.0] = CONST_1.0
+--------------------
+before solving combined PC constraint # = 5
+REAL_2[1.0] < CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+REAL_3[1.0] = CONST_1.0
+--------------------
+numeric PC: constraint # = 5
+REAL_2 < CONST_1.0 &&
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+REAL_3 = CONST_1.0 -> false
+
+combined PC not satisfiable
+--------extra PC------------0
+extra pc constraint # = 1
+REAL_3 = CONST_1.0
+--- end printing extra PC ---
+--------working PC------------1
+working pc constraint # = 5
+REAL_3 > CONST_1.0 &&
+REAL_2 <  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing working PC ---
+### PCs: total:5 sat:4 unsat:1
+
+--------original PC------------0
+original pc constraint # = 4
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 4
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 1
+ pow (REAL_3,CONST_2.0) = REAL_2
+simplePC constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT
+--------end after splitting------------
+numeric PC: constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 3
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+........................START SOLVING
+--------------------
+simplePC constraint # = 3
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+--------------------
+new PC constraint # = 4
+CONST_1.0 = REAL_2[1.0] &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+extraPC constraintsconstraint # = 1
+REAL_3[1.0] = CONST_1.0
+--------------------
+before solving combined PC constraint # = 5
+CONST_1.0 = REAL_2[1.0] &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+REAL_3[1.0] = CONST_1.0
+--------------------
+numeric PC: constraint # = 5
+CONST_1.0 = REAL_2 &&
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+REAL_3 = CONST_1.0 -> true
+
+combined PC satisfiable
+### PCs: total:6 sat:5 unsat:1
+
+string analysis: SPC # = 0
+NPC constraint # = 4
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--------original PC------------0
+original pc constraint # = 4
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 4
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 1
+REAL_2 >  pow (REAL_3,CONST_2.0)
+simplePC constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT
+--------end after splitting------------
+numeric PC: constraint # = 3
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 3
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+........................START SOLVING
+--------------------
+simplePC constraint # = 3
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+--------------------
+new PC constraint # = 4
+REAL_2[1.0] > CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647]
+extraPC constraintsconstraint # = 1
+REAL_3[1.0] = CONST_1.0
+--------------------
+before solving combined PC constraint # = 5
+REAL_2[1.0] > CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[2147483647] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+REAL_3[1.0] = CONST_1.0
+--------------------
+numeric PC: constraint # = 5
+REAL_2 > CONST_1.0 &&
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+REAL_3 = CONST_1.0 -> true
+
+combined PC satisfiable
+### PCs: total:7 sat:6 unsat:1
+
+string analysis: SPC # = 0
+NPC constraint # = 4
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+S0
+--------original PC------------0
+original pc constraint # = 5
+y_2_SYMINT <= CONST_8 &&
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 5
+y_2_SYMINT <= CONST_8 &&
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 1
+ pow (REAL_3,CONST_2.0) = REAL_2
+simplePC constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT <= CONST_8
+--------end after splitting------------
+numeric PC: constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT <= CONST_8 -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8
+........................START SOLVING
+--------------------
+simplePC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8
+--------------------
+new PC constraint # = 5
+CONST_1.0 = REAL_2[1.0] &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8
+extraPC constraintsconstraint # = 1
+REAL_3[1.0] = CONST_1.0
+--------------------
+before solving combined PC constraint # = 6
+CONST_1.0 = REAL_2[1.0] &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8 &&
+REAL_3[1.0] = CONST_1.0
+--------------------
+numeric PC: constraint # = 6
+CONST_1.0 = REAL_2 &&
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT <= CONST_8 &&
+REAL_3 = CONST_1.0 -> true
+
+combined PC satisfiable
+### PCs: total:8 sat:7 unsat:1
+
+string analysis: SPC # = 0
+NPC constraint # = 5
+y_2_SYMINT <= CONST_8 &&
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--------original PC------------0
+original pc constraint # = 5
+y_2_SYMINT > CONST_8 &&
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 5
+y_2_SYMINT > CONST_8 &&
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 1
+ pow (REAL_3,CONST_2.0) = REAL_2
+simplePC constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT > CONST_8
+--------end after splitting------------
+numeric PC: constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT > CONST_8 -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8
+........................START SOLVING
+--------------------
+simplePC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8
+--------------------
+new PC constraint # = 5
+CONST_1.0 = REAL_2[9.0] &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8
+extraPC constraintsconstraint # = 1
+REAL_3[1.0] = CONST_1.0
+--------------------
+before solving combined PC constraint # = 6
+CONST_1.0 = REAL_2[9.0] &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8 &&
+REAL_3[1.0] = CONST_1.0
+--------------------
+numeric PC: constraint # = 6
+CONST_1.0 = REAL_2 &&
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT > CONST_8 &&
+REAL_3 = CONST_1.0 -> false
+
+combined PC not satisfiable
+--------extra PC------------0
+extra pc constraint # = 1
+REAL_3 = CONST_1.0
+--- end printing extra PC ---
+--------working PC------------1
+working pc constraint # = 6
+REAL_3 > CONST_1.0 &&
+y_2_SYMINT > CONST_8 &&
+ pow (REAL_3,CONST_2.0) = REAL_2 &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing working PC ---
+### PCs: total:9 sat:7 unsat:2
+
+S0;S4
+S1
+--------original PC------------0
+original pc constraint # = 5
+y_2_SYMINT <= CONST_8 &&
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 5
+y_2_SYMINT <= CONST_8 &&
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 1
+REAL_2 >  pow (REAL_3,CONST_2.0)
+simplePC constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT <= CONST_8
+--------end after splitting------------
+numeric PC: constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT <= CONST_8 -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8
+........................START SOLVING
+--------------------
+simplePC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8
+--------------------
+new PC constraint # = 5
+REAL_2[1.0] > CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8
+extraPC constraintsconstraint # = 1
+REAL_3[1.0] = CONST_1.0
+--------------------
+before solving combined PC constraint # = 6
+REAL_2[1.0] > CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[1.0] = y_2_SYMINT[1] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[1] <= CONST_8 &&
+REAL_3[1.0] = CONST_1.0
+--------------------
+numeric PC: constraint # = 6
+REAL_2 > CONST_1.0 &&
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT <= CONST_8 &&
+REAL_3 = CONST_1.0 -> true
+
+combined PC satisfiable
+### PCs: total:10 sat:8 unsat:2
+
+string analysis: SPC # = 0
+NPC constraint # = 5
+y_2_SYMINT <= CONST_8 &&
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--------original PC------------0
+original pc constraint # = 5
+y_2_SYMINT > CONST_8 &&
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+--- end printing original PC ---
+--------begin after splitting------------
+originalPC constraint # = 5
+y_2_SYMINT > CONST_8 &&
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+concolicPC constraint # = 1
+REAL_2 >  pow (REAL_3,CONST_2.0)
+simplePC constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT > CONST_8
+--------end after splitting------------
+numeric PC: constraint # = 4
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT > CONST_8 -> true
+
+string analysis: SPC # = 0
+NPC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8
+........................START SOLVING
+--------------------
+simplePC constraint # = 4
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8
+--------------------
+new PC constraint # = 5
+REAL_2[9.0] > CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8
+extraPC constraintsconstraint # = 1
+REAL_3[1.0] = CONST_1.0
+--------------------
+before solving combined PC constraint # = 6
+REAL_2[9.0] > CONST_1.0 &&
+x_1_SYMINT[2147483647] > CONST_0 &&
+REAL_2[9.0] = y_2_SYMINT[9] &&
+REAL_3[1.0] = x_1_SYMINT[2147483647] &&
+y_2_SYMINT[9] > CONST_8 &&
+REAL_3[1.0] = CONST_1.0
+--------------------
+numeric PC: constraint # = 6
+REAL_2 > CONST_1.0 &&
+x_1_SYMINT > CONST_0 &&
+REAL_2 = y_2_SYMINT &&
+REAL_3 = x_1_SYMINT &&
+y_2_SYMINT > CONST_8 &&
+REAL_3 = CONST_1.0 -> true
+
+combined PC satisfiable
+### PCs: total:11 sat:9 unsat:2
+
+string analysis: SPC # = 0
+NPC constraint # = 5
+y_2_SYMINT > CONST_8 &&
+REAL_2 >  pow (REAL_3,CONST_2.0) &&
+REAL_3 = x_1_SYMINT &&
+REAL_2 = y_2_SYMINT &&
+x_1_SYMINT > CONST_0
+S1;S3
+S1;S4
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=9,visited=0,backtracked=9,end=4
+search:             maxDepth=6,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=5
+heap:               new=362,released=42,maxLive=352,gcCycles=6
+instructions:       3315
+max memory:         240MB
+loaded code:        classes=60,methods=1291
+
+====================================================== search finished: 10/9/19 3:25 AM

@@ -1,0 +1,70 @@
+Running Symbolic PathFinder ...
+symbolic.dp=choco
+symbolic.string_dp_timeout_ms=0
+symbolic.string_dp=none
+symbolic.choco_time_bound=30000
+symbolic.max_pc_length=2147483647
+symbolic.max_pc_msec=0
+symbolic.bvlength=32
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+symbolicheap.StaticTest.main()
+
+====================================================== search started: 10/9/19 3:25 AM
+New sym int n_1_SYMREF min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 1
+n_1_SYMREF = CONST_-1
+test static <=0
+New sym int n_1_SYMREF min=-2147483648, max=2147483647
+New sym int n_1_SYMREF.elem min=-2147483648, max=2147483647
+New sym int symbolicheap.StaticTest.sfield min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 2
+n_1_SYMREF = CONST_0 &&
+n_1_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+n_1_SYMREF.elem <= CONST_0 -> true
+
+### PCs: total:1 sat:1 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+n_1_SYMREF.elem <= CONST_0
+numeric PC: constraint # = 1
+n_1_SYMREF.elem > CONST_0 -> true
+
+### PCs: total:2 sat:2 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+n_1_SYMREF.elem > CONST_0
+test static >0
+test static <=0
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=5,visited=0,backtracked=5,end=3
+search:             maxDepth=3,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=2
+heap:               new=358,released=29,maxLive=350,gcCycles=5
+instructions:       3254
+max memory:         240MB
+loaded code:        classes=60,methods=1291
+
+====================================================== search finished: 10/9/19 3:25 AM

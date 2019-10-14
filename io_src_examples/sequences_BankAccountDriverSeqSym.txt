@@ -1,0 +1,1701 @@
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+sequences.BankAccountDriverSeqSym.main()
+
+====================================================== search started: 10/9/19 3:25 AM
+Path Condition: constraint # = 6
+amount_6_SYMINT > CONST_0 &&
+x_5_SYMINT != CONST_0 &&
+amount_4_SYMINT > CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_6_SYMINT <= CONST_0 &&
+x_5_SYMINT != CONST_0 &&
+amount_4_SYMINT > CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_7_SYMINT > CONST_0 &&
+x_5_SYMINT = CONST_0 &&
+amount_4_SYMINT > CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_7_SYMINT <= CONST_0 &&
+x_5_SYMINT = CONST_0 &&
+amount_4_SYMINT > CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_9_SYMINT > (CONST_0 - amount_4_SYMINT) &&
+x_8_SYMINT != CONST_0 &&
+amount_4_SYMINT <= CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_9_SYMINT <= (CONST_0 - amount_4_SYMINT) &&
+x_8_SYMINT != CONST_0 &&
+amount_4_SYMINT <= CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_10_SYMINT > CONST_0 &&
+x_8_SYMINT = CONST_0 &&
+amount_4_SYMINT <= CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_10_SYMINT <= CONST_0 &&
+x_8_SYMINT = CONST_0 &&
+amount_4_SYMINT <= CONST_0 &&
+x_3_SYMINT != CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_13_SYMINT > amount_11_SYMINT &&
+x_12_SYMINT != CONST_0 &&
+amount_11_SYMINT > CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_13_SYMINT <= amount_11_SYMINT &&
+x_12_SYMINT != CONST_0 &&
+amount_11_SYMINT > CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_14_SYMINT > CONST_0 &&
+x_12_SYMINT = CONST_0 &&
+amount_11_SYMINT > CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_14_SYMINT <= CONST_0 &&
+x_12_SYMINT = CONST_0 &&
+amount_11_SYMINT > CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_16_SYMINT > CONST_0 &&
+x_15_SYMINT != CONST_0 &&
+amount_11_SYMINT <= CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_16_SYMINT <= CONST_0 &&
+x_15_SYMINT != CONST_0 &&
+amount_11_SYMINT <= CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_17_SYMINT > CONST_0 &&
+x_15_SYMINT = CONST_0 &&
+amount_11_SYMINT <= CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_17_SYMINT <= CONST_0 &&
+x_15_SYMINT = CONST_0 &&
+amount_11_SYMINT <= CONST_0 &&
+x_3_SYMINT = CONST_0 &&
+amount_2_SYMINT > CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 5
+x_20_SYMINT != CONST_0 &&
+amount_19_SYMINT > (CONST_0 - amount_2_SYMINT) &&
+x_18_SYMINT != CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_22_SYMINT > CONST_0 &&
+x_20_SYMINT = CONST_0 &&
+amount_19_SYMINT > (CONST_0 - amount_2_SYMINT) &&
+x_18_SYMINT != CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_22_SYMINT <= CONST_0 &&
+x_20_SYMINT = CONST_0 &&
+amount_19_SYMINT > (CONST_0 - amount_2_SYMINT) &&
+x_18_SYMINT != CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 5
+x_23_SYMINT != CONST_0 &&
+amount_19_SYMINT <= (CONST_0 - amount_2_SYMINT) &&
+x_18_SYMINT != CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_25_SYMINT > CONST_0 &&
+x_23_SYMINT = CONST_0 &&
+amount_19_SYMINT <= (CONST_0 - amount_2_SYMINT) &&
+x_18_SYMINT != CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_25_SYMINT <= CONST_0 &&
+x_23_SYMINT = CONST_0 &&
+amount_19_SYMINT <= (CONST_0 - amount_2_SYMINT) &&
+x_18_SYMINT != CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_28_SYMINT > (amount_26_SYMINT + (CONST_0 - amount_2_SYMINT)) &&
+x_27_SYMINT != CONST_0 &&
+amount_26_SYMINT > CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_28_SYMINT <= (amount_26_SYMINT + (CONST_0 - amount_2_SYMINT)) &&
+x_27_SYMINT != CONST_0 &&
+amount_26_SYMINT > CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_29_SYMINT > CONST_0 &&
+x_27_SYMINT = CONST_0 &&
+amount_26_SYMINT > CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_29_SYMINT <= CONST_0 &&
+x_27_SYMINT = CONST_0 &&
+amount_26_SYMINT > CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_31_SYMINT > (CONST_0 - amount_2_SYMINT) &&
+x_30_SYMINT != CONST_0 &&
+amount_26_SYMINT <= CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_31_SYMINT <= (CONST_0 - amount_2_SYMINT) &&
+x_30_SYMINT != CONST_0 &&
+amount_26_SYMINT <= CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_32_SYMINT > CONST_0 &&
+x_30_SYMINT = CONST_0 &&
+amount_26_SYMINT <= CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_32_SYMINT <= CONST_0 &&
+x_30_SYMINT = CONST_0 &&
+amount_26_SYMINT <= CONST_0 &&
+x_18_SYMINT = CONST_0 &&
+amount_2_SYMINT <= CONST_0 &&
+x_1_SYMINT != CONST_0
+
+Path Condition: constraint # = 6
+amount_37_SYMINT > amount_33_SYMINT &&
+x_36_SYMINT != CONST_0 &&
+amount_35_SYMINT > amount_33_SYMINT &&
+x_34_SYMINT != CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_37_SYMINT <= amount_33_SYMINT &&
+x_36_SYMINT != CONST_0 &&
+amount_35_SYMINT > amount_33_SYMINT &&
+x_34_SYMINT != CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_38_SYMINT > CONST_0 &&
+x_36_SYMINT = CONST_0 &&
+amount_35_SYMINT > amount_33_SYMINT &&
+x_34_SYMINT != CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_38_SYMINT <= CONST_0 &&
+x_36_SYMINT = CONST_0 &&
+amount_35_SYMINT > amount_33_SYMINT &&
+x_34_SYMINT != CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 5
+x_39_SYMINT != CONST_0 &&
+amount_35_SYMINT <= amount_33_SYMINT &&
+x_34_SYMINT != CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_41_SYMINT > CONST_0 &&
+x_39_SYMINT = CONST_0 &&
+amount_35_SYMINT <= amount_33_SYMINT &&
+x_34_SYMINT != CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_41_SYMINT <= CONST_0 &&
+x_39_SYMINT = CONST_0 &&
+amount_35_SYMINT <= amount_33_SYMINT &&
+x_34_SYMINT != CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_44_SYMINT > (amount_42_SYMINT + amount_33_SYMINT) &&
+x_43_SYMINT != CONST_0 &&
+amount_42_SYMINT > CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_44_SYMINT <= (amount_42_SYMINT + amount_33_SYMINT) &&
+x_43_SYMINT != CONST_0 &&
+amount_42_SYMINT > CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_45_SYMINT > CONST_0 &&
+x_43_SYMINT = CONST_0 &&
+amount_42_SYMINT > CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_45_SYMINT <= CONST_0 &&
+x_43_SYMINT = CONST_0 &&
+amount_42_SYMINT > CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_47_SYMINT > amount_33_SYMINT &&
+x_46_SYMINT != CONST_0 &&
+amount_42_SYMINT <= CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_47_SYMINT <= amount_33_SYMINT &&
+x_46_SYMINT != CONST_0 &&
+amount_42_SYMINT <= CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_48_SYMINT > CONST_0 &&
+x_46_SYMINT = CONST_0 &&
+amount_42_SYMINT <= CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_48_SYMINT <= CONST_0 &&
+x_46_SYMINT = CONST_0 &&
+amount_42_SYMINT <= CONST_0 &&
+x_34_SYMINT = CONST_0 &&
+amount_33_SYMINT > CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_52_SYMINT > CONST_0 &&
+x_51_SYMINT != CONST_0 &&
+amount_50_SYMINT > CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_52_SYMINT <= CONST_0 &&
+x_51_SYMINT != CONST_0 &&
+amount_50_SYMINT > CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_53_SYMINT > CONST_0 &&
+x_51_SYMINT = CONST_0 &&
+amount_50_SYMINT > CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_53_SYMINT <= CONST_0 &&
+x_51_SYMINT = CONST_0 &&
+amount_50_SYMINT > CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_55_SYMINT > (CONST_0 - amount_50_SYMINT) &&
+x_54_SYMINT != CONST_0 &&
+amount_50_SYMINT <= CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_55_SYMINT <= (CONST_0 - amount_50_SYMINT) &&
+x_54_SYMINT != CONST_0 &&
+amount_50_SYMINT <= CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_56_SYMINT > CONST_0 &&
+x_54_SYMINT = CONST_0 &&
+amount_50_SYMINT <= CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_56_SYMINT <= CONST_0 &&
+x_54_SYMINT = CONST_0 &&
+amount_50_SYMINT <= CONST_0 &&
+x_49_SYMINT != CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_59_SYMINT > amount_57_SYMINT &&
+x_58_SYMINT != CONST_0 &&
+amount_57_SYMINT > CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_59_SYMINT <= amount_57_SYMINT &&
+x_58_SYMINT != CONST_0 &&
+amount_57_SYMINT > CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_60_SYMINT > CONST_0 &&
+x_58_SYMINT = CONST_0 &&
+amount_57_SYMINT > CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_60_SYMINT <= CONST_0 &&
+x_58_SYMINT = CONST_0 &&
+amount_57_SYMINT > CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_62_SYMINT > CONST_0 &&
+x_61_SYMINT != CONST_0 &&
+amount_57_SYMINT <= CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_62_SYMINT <= CONST_0 &&
+x_61_SYMINT != CONST_0 &&
+amount_57_SYMINT <= CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_63_SYMINT > CONST_0 &&
+x_61_SYMINT = CONST_0 &&
+amount_57_SYMINT <= CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+Path Condition: constraint # = 6
+amount_63_SYMINT <= CONST_0 &&
+x_61_SYMINT = CONST_0 &&
+amount_57_SYMINT <= CONST_0 &&
+x_49_SYMINT = CONST_0 &&
+amount_33_SYMINT <= CONST_0 &&
+x_1_SYMINT = CONST_0
+
+
+====================================================== Method Sequences
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647), flag(true), withdraw(2147483647)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647), flag(true)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647), flag(false), deposit(2147483647)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647), flag(false)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648), flag(true)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648), flag(false), deposit(2147483647)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648), flag(false)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(2147483647), flag(true)]
+[flag(true), withdraw(2147483647), flag(false), deposit(2147483647), flag(true), withdraw(2147483647)]
+[flag(true), withdraw(2147483647), flag(false), deposit(2147483647), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(2147483647), flag(false), deposit(2147483647), flag(true)]
+[flag(true), withdraw(2147483647), flag(false), deposit(2147483647), flag(false), deposit(2147483647)]
+[flag(true), withdraw(2147483647), flag(false), deposit(2147483647), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(2147483647), flag(false), deposit(2147483647), flag(false)]
+[flag(true), withdraw(2147483647), flag(false), deposit(2147483647)]
+[flag(true), withdraw(2147483647), flag(false), deposit(-2147483648), flag(true), withdraw(2147483647)]
+[flag(true), withdraw(2147483647), flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(2147483647), flag(false), deposit(-2147483648), flag(true)]
+[flag(true), withdraw(2147483647), flag(false), deposit(-2147483648), flag(false), deposit(2147483647)]
+[flag(true), withdraw(2147483647), flag(false), deposit(-2147483648), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(2147483647), flag(false), deposit(-2147483648), flag(false)]
+[flag(true), withdraw(2147483647), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(2147483647), flag(false)]
+[flag(true), withdraw(2147483647)]
+[flag(true), withdraw(2147483647), flag(true), withdraw(2147483647), flag(true), withdraw(-9223372036854775808)]
+[flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648), flag(true), withdraw(-9223372036854775808)]
+[flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648), flag(true)]
+[flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648), flag(false), deposit(2147483647)]
+[flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648), flag(false)]
+[flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(-2147483648), flag(true)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(2147483647), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(2147483647), flag(true)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(2147483647), flag(false), deposit(2147483647)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(2147483647), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(2147483647), flag(false)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(2147483647)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648), flag(true)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648), flag(false), deposit(2147483647)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648), flag(false)]
+[flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648)]
+[flag(true), withdraw(-2147483648), flag(false)]
+[flag(true), withdraw(-2147483648)]
+[flag(true)]
+[flag(false), deposit(2147483647), flag(true), withdraw(2147483647), flag(true), withdraw(2147483647)]
+[flag(false), deposit(2147483647), flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(2147483647), flag(true), withdraw(2147483647), flag(true)]
+[flag(false), deposit(2147483647), flag(true), withdraw(2147483647), flag(false), deposit(2147483647)]
+[flag(false), deposit(2147483647), flag(true), withdraw(2147483647), flag(false), deposit(-2147483648)]
+[flag(false), deposit(2147483647), flag(true), withdraw(2147483647), flag(false)]
+[flag(false), deposit(2147483647), flag(true), withdraw(2147483647)]
+[flag(false), deposit(2147483647), flag(true), withdraw(-2147483648), flag(true), withdraw(-9223372036854775808)]
+[flag(false), deposit(2147483647), flag(true), withdraw(-2147483648), flag(true)]
+[flag(false), deposit(2147483647), flag(true), withdraw(-2147483648), flag(false), deposit(2147483647)]
+[flag(false), deposit(2147483647), flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648)]
+[flag(false), deposit(2147483647), flag(true), withdraw(-2147483648), flag(false)]
+[flag(false), deposit(2147483647), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(2147483647), flag(true)]
+[flag(false), deposit(1), flag(false), deposit(1), flag(true), withdraw(3)]
+[flag(false), deposit(2147483647), flag(false), deposit(2147483647), flag(true), withdraw(2147483647)]
+[flag(false), deposit(2147483647), flag(false), deposit(2147483647), flag(true)]
+[flag(false), deposit(2147483647), flag(false), deposit(2147483647), flag(false), deposit(2147483647)]
+[flag(false), deposit(2147483647), flag(false), deposit(2147483647), flag(false), deposit(-2147483648)]
+[flag(false), deposit(2147483647), flag(false), deposit(2147483647), flag(false)]
+[flag(false), deposit(2147483647), flag(false), deposit(2147483647)]
+[flag(false), deposit(2147483647), flag(false), deposit(-2147483648), flag(true), withdraw(2147483647)]
+[flag(false), deposit(2147483647), flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(2147483647), flag(false), deposit(-2147483648), flag(true)]
+[flag(false), deposit(2147483647), flag(false), deposit(-2147483648), flag(false), deposit(2147483647)]
+[flag(false), deposit(2147483647), flag(false), deposit(-2147483648), flag(false), deposit(-2147483648)]
+[flag(false), deposit(2147483647), flag(false), deposit(-2147483648), flag(false)]
+[flag(false), deposit(2147483647), flag(false), deposit(-2147483648)]
+[flag(false), deposit(2147483647), flag(false)]
+[flag(false), deposit(2147483647)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(2147483647), flag(true), withdraw(2147483647)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(2147483647), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(2147483647), flag(true)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(2147483647), flag(false), deposit(2147483647)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(2147483647), flag(false), deposit(-2147483648)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(2147483647), flag(false)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(2147483647)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648), flag(true)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648), flag(false), deposit(2147483647)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648), flag(false), deposit(-2147483648)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648), flag(false)]
+[flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(-2147483648), flag(true)]
+[flag(false), deposit(-2147483648), flag(false), deposit(2147483647), flag(true), withdraw(2147483647)]
+[flag(false), deposit(-2147483648), flag(false), deposit(2147483647), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(-2147483648), flag(false), deposit(2147483647), flag(true)]
+[flag(false), deposit(-2147483648), flag(false), deposit(2147483647), flag(false), deposit(2147483647)]
+[flag(false), deposit(-2147483648), flag(false), deposit(2147483647), flag(false), deposit(-2147483648)]
+[flag(false), deposit(-2147483648), flag(false), deposit(2147483647), flag(false)]
+[flag(false), deposit(-2147483648), flag(false), deposit(2147483647)]
+[flag(false), deposit(-2147483648), flag(false), deposit(-2147483648), flag(true), withdraw(2147483647)]
+[flag(false), deposit(-2147483648), flag(false), deposit(-2147483648), flag(true), withdraw(-2147483648)]
+[flag(false), deposit(-2147483648), flag(false), deposit(-2147483648), flag(true)]
+[flag(false), deposit(-2147483648), flag(false), deposit(-2147483648), flag(false), deposit(2147483647)]
+[flag(false), deposit(-2147483648), flag(false), deposit(-2147483648), flag(false), deposit(-2147483648)]
+[flag(false), deposit(-2147483648), flag(false), deposit(-2147483648), flag(false)]
+[flag(false), deposit(-2147483648), flag(false), deposit(-2147483648)]
+[flag(false), deposit(-2147483648), flag(false)]
+[flag(false), deposit(-2147483648)]
+[flag(false)]
+
+====================================================== JUnit 4.0 test class
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
+public class sequences_BankAccountTest {
+
+	private sequences.BankAccount sequences_bankaccount;
+
+	@Before
+	public void setUp() throws Exception {
+		sequences_bankaccount = new sequences.BankAccount();
+	}
+
+	@Test
+	public void test0() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test1() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test2() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test3() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test4() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test5() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test6() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test7() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test8() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test9() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test10() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test11() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test12() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test13() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test14() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test15() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test16() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test17() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test18() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test19() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test20() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test21() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test22() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test23() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test24() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test25() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test26() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test27() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test28() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test29() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test30() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-9223372036854775808);
+	}
+
+	@Test
+	public void test31() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-9223372036854775808);
+	}
+
+	@Test
+	public void test32() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test33() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test34() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test35() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test36() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test37() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test38() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test39() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test40() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test41() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test42() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test43() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test44() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test45() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test46() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test47() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test48() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test49() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test50() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test51() {
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test52() {
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test53() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test54() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test55() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test56() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test57() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test58() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test59() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test60() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-9223372036854775808);
+	}
+
+	@Test
+	public void test61() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test62() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test63() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test64() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test65() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test66() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test67() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(1);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(1);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(3);
+	}
+
+	@Test
+	public void test68() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test69() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test70() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test71() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test72() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test73() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test74() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test75() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test76() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test77() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test78() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test79() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test80() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test81() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test82() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test83() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test84() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test85() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test86() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test87() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test88() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test89() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test90() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test91() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test92() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test93() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test94() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test95() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test96() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test97() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test98() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test99() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test100() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test101() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test102() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test103() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test104() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(2147483647);
+	}
+
+	@Test
+	public void test105() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+		sequences_bankaccount.withdraw(-2147483648);
+	}
+
+	@Test
+	public void test106() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(true);
+	}
+
+	@Test
+	public void test107() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(2147483647);
+	}
+
+	@Test
+	public void test108() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test109() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test110() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test111() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+		sequences_bankaccount.flag(false);
+	}
+
+	@Test
+	public void test112() {
+		sequences_bankaccount.flag(false);
+		sequences_bankaccount.deposit(-2147483648);
+	}
+
+	@Test
+	public void test113() {
+		sequences_bankaccount.flag(false);
+	}
+}
+
+====================================================== coverage statistics
+
+-------------------------------------------- class coverage ------------------------------------------------
+bytecode            line                basic-block         branch              methods             location
+------------------------------------------------------------------------------------------------------------
+0.83 (43/52)        0.80 (12/15)        0.72 (13/18)        0.40 (2/5)          1.00 (4/4)          sequences.BankAccount
+  0.75 (6/8)          0.00 (0/1)          0.80 (4/5)          0.00 (0/1)           -                  <clinit>()
+                                                                                    at sequences.BankAccount.<clinit>(BankAccount.java:30) 
+                                                                                    T at sequences.BankAccount.<clinit>(BankAccount.java:30) 
+  0.76 (22/29)        0.75 (6/8)          0.50 (4/8)          0.33 (1/3)           -                  withdraw(int)
+                                                                                    at sequences.BankAccount.withdraw(BankAccount.java:53) 
+                                                                                    .. sequences.BankAccount.withdraw(BankAccount.java:55) 
+                                                                                    at sequences.BankAccount.withdraw(BankAccount.java:48) 
+                                                                                    T at sequences.BankAccount.withdraw(BankAccount.java:52) 
+                                                                                    N at sequences.BankAccount.withdraw(BankAccount.java:53) 
+  1.00 (6/6)          1.00 (3/3)          1.00 (2/2)           -                   -                  <init>(int)
+  1.00 (9/9)          1.00 (3/3)          1.00 (3/3)          1.00 (1/1)           -                  deposit(int)
+
+------------------------------------------------------------------------------------------------------------
+0.83 (43/52)        0.80 (12/15)        0.72 (13/18)        0.40 (2/5)          1.00 (4/4)          1.00 (1/1)         total
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=184,visited=0,backtracked=184,end=61
+search:             maxDepth=13,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=123
+heap:               new=663,released=612,maxLive=356,gcCycles=100
+instructions:       6431
+max memory:         240MB
+loaded code:        classes=63,methods=1431
+
+====================================================== search finished: 10/9/19 3:25 AM

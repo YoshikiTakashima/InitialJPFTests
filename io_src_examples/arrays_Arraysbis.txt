@@ -1,0 +1,108 @@
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+arrays.Arrays.main()
+
+====================================================== search started: 10/9/19 3:26 AM
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArrayIndexOutOfBoundsException: index greater than array bounds
+	at arrays.Arrays.counter(Arrays.java:6)
+	at arrays.Arrays.main(Arrays.java:49)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at arrays.Arrays.counter(Arrays.java:6)
+	at arrays.Arrays.main(Arrays.java:49)
+
+
+====================================================== error 2
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArrayIndexOutOfBoundsException: index greater than array bounds
+	at arrays.Arrays.counter(Arrays.java:5)
+	at arrays.Arrays.main(Arrays.java:49)
+
+
+====================================================== snapshot #2
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at arrays.Arrays.counter(Arrays.java:5)
+	at arrays.Arrays.main(Arrays.java:49)
+
+
+====================================================== error 3
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArithmeticException: div by 0
+	at arrays.Arrays.counter_bis(Arrays.java:14)
+	at arrays.Arrays.main(Arrays.java:48)
+
+
+====================================================== snapshot #3
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at arrays.Arrays.counter_bis(Arrays.java:14)
+	at arrays.Arrays.main(Arrays.java:48)
+
+
+====================================================== error 4
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArrayIndexOutOfBoundsException: index greater than array bounds
+	at arrays.Arrays.counter_bis(Arrays.java:13)
+	at arrays.Arrays.main(Arrays.java:48)
+
+
+====================================================== snapshot #4
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at arrays.Arrays.counter_bis(Arrays.java:13)
+	at arrays.Arrays.main(Arrays.java:48)
+
+
+====================================================== error 5
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArrayIndexOutOfBoundsException: index smaller than array bounds
+	at arrays.Arrays.counter_bis(Arrays.java:13)
+	at arrays.Arrays.main(Arrays.java:48)
+
+
+====================================================== snapshot #5
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at arrays.Arrays.counter_bis(Arrays.java:13)
+	at arrays.Arrays.main(Arrays.java:48)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArrayIndexOutOfBoundsException: index gr..."
+error #2: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArrayIndexOutOfBoundsException: index gr..."
+error #3: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArithmeticException: div by 0  at arrays..."
+error #4: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArrayIndexOutOfBoundsException: index gr..."
+error #5: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.ArrayIndexOutOfBoundsException: index sm..."
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=23,visited=0,backtracked=23,end=1
+search:             maxDepth=10,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=9
+heap:               new=454,released=16,maxLive=359,gcCycles=9
+instructions:       3348
+max memory:         240MB
+loaded code:        classes=67,methods=1333
+
+====================================================== search finished: 10/9/19 3:26 AM

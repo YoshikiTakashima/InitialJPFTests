@@ -1,0 +1,1281 @@
+Running Symbolic PathFinder ...
+symbolic.dp=choco
+symbolic.string_dp_timeout_ms=0
+symbolic.string_dp=none
+symbolic.choco_time_bound=30000
+symbolic.max_pc_length=2147483647
+symbolic.max_pc_msec=0
+symbolic.bvlength=32
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+symbolicheap.HeapAndThreads.main()
+
+====================================================== search started: 10/9/19 3:25 AM
+M: new symbolicheap.HeapAndThreads$X@43704
+M: x.pass=true
+New sym int someX_1_SYMREF min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 1
+someX_1_SYMREF = CONST_-1
+New sym int someX_1_SYMREF min=-2147483648, max=2147483647
+New sym int someX_1_SYMREF.pass min=0, max=1
+New sym int someX_1_SYMREF.next min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 2
+someX_1_SYMREF = CONST_0 &&
+someX_1_SYMREF != CONST_-1
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_1_SYMREF.next = someX_1_SYMREF &&
+someX_1_SYMREF = CONST_0 &&
+someX_1_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_1_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:1 sat:1 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_1_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_1_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:2 sat:2 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_1_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_1_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:3 sat:3 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_1_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_1_SYMREF.pass = CONST_0 &&
+someX_1_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:4 sat:3 unsat:1
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_1_SYMREF.next = CONST_-1 &&
+someX_1_SYMREF = CONST_0 &&
+someX_1_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_1_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_1_SYMREF.next.pass min=0, max=1
+New sym int someX_1_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_1_SYMREF.next != someX_1_SYMREF &&
+someX_1_SYMREF.next = CONST_1 &&
+someX_1_SYMREF.next != CONST_-1 &&
+someX_1_SYMREF = CONST_0 &&
+someX_1_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_1_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:5 sat:4 unsat:1
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_1_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_1_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:6 sat:5 unsat:1
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_1_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_1_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:7 sat:6 unsat:1
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_1_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_1_SYMREF.pass = CONST_0 &&
+someX_1_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:8 sat:6 unsat:2
+
+New sym int someX_2_SYMREF min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 1
+someX_2_SYMREF = CONST_-1
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+New sym int someX_2_SYMREF min=-2147483648, max=2147483647
+New sym int someX_2_SYMREF.pass min=0, max=1
+New sym int someX_2_SYMREF.next min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 2
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = someX_2_SYMREF &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:9 sat:7 unsat:2
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:10 sat:8 unsat:2
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:11 sat:9 unsat:2
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:12 sat:9 unsat:3
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_2_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_2_SYMREF.next.pass min=0, max=1
+New sym int someX_2_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_2_SYMREF.next != someX_2_SYMREF &&
+someX_2_SYMREF.next = CONST_1 &&
+someX_2_SYMREF.next != CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:13 sat:10 unsat:3
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:14 sat:11 unsat:3
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:15 sat:12 unsat:3
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:16 sat:12 unsat:4
+
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = someX_2_SYMREF &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:17 sat:13 unsat:4
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:18 sat:14 unsat:4
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:19 sat:15 unsat:4
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:20 sat:15 unsat:5
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_2_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_2_SYMREF.next.pass min=0, max=1
+New sym int someX_2_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_2_SYMREF.next != someX_2_SYMREF &&
+someX_2_SYMREF.next = CONST_1 &&
+someX_2_SYMREF.next != CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:21 sat:16 unsat:5
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:22 sat:17 unsat:5
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:23 sat:18 unsat:5
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:24 sat:18 unsat:6
+
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = someX_2_SYMREF &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:25 sat:19 unsat:6
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:26 sat:20 unsat:6
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:27 sat:21 unsat:6
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:28 sat:21 unsat:7
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_2_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_2_SYMREF.next.pass min=0, max=1
+New sym int someX_2_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_2_SYMREF.next != someX_2_SYMREF &&
+someX_2_SYMREF.next = CONST_1 &&
+someX_2_SYMREF.next != CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:29 sat:22 unsat:7
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:30 sat:23 unsat:7
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:31 sat:24 unsat:7
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:32 sat:24 unsat:8
+
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = someX_2_SYMREF &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:33 sat:25 unsat:8
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:34 sat:26 unsat:8
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:35 sat:27 unsat:8
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:36 sat:27 unsat:9
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_2_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_2_SYMREF.next.pass min=0, max=1
+New sym int someX_2_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_2_SYMREF.next != someX_2_SYMREF &&
+someX_2_SYMREF.next = CONST_1 &&
+someX_2_SYMREF.next != CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:37 sat:28 unsat:9
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:38 sat:29 unsat:9
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:39 sat:30 unsat:9
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:40 sat:30 unsat:10
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = someX_2_SYMREF &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:41 sat:31 unsat:10
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:42 sat:32 unsat:10
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:43 sat:33 unsat:10
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:44 sat:33 unsat:11
+
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:45 sat:34 unsat:11
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:46 sat:35 unsat:11
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:47 sat:36 unsat:11
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:48 sat:36 unsat:12
+
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:49 sat:37 unsat:12
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:50 sat:37 unsat:13
+
+M: x.pass=true
+M: x.pass=true
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_2_SYMREF.next = CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+M: x.pass=true
+lazy initialization
+New sym int someX_2_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_2_SYMREF.next.pass min=0, max=1
+New sym int someX_2_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_2_SYMREF.next != someX_2_SYMREF &&
+someX_2_SYMREF.next = CONST_1 &&
+someX_2_SYMREF.next != CONST_-1 &&
+someX_2_SYMREF = CONST_0 &&
+someX_2_SYMREF != CONST_-1
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:51 sat:38 unsat:13
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:52 sat:39 unsat:13
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:53 sat:40 unsat:13
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:54 sat:40 unsat:14
+
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:55 sat:41 unsat:14
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:56 sat:42 unsat:14
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+T: accessed global myX
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:57 sat:43 unsat:14
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:58 sat:43 unsat:15
+
+numeric PC: constraint # = 1
+someX_2_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:59 sat:44 unsat:15
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_2_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_2_SYMREF.pass = CONST_0 &&
+someX_2_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:60 sat:44 unsat:16
+
+M: x.pass=true
+M: x.pass=true
+New sym int someX_3_SYMREF min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 1
+someX_3_SYMREF = CONST_-1
+M: new symbolicheap.HeapAndThreads$X@43704
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: new symbolicheap.HeapAndThreads$X@43704
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: new symbolicheap.HeapAndThreads$X@43704
+M: x.pass=true
+New sym int someX_3_SYMREF min=-2147483648, max=2147483647
+New sym int someX_3_SYMREF.pass min=0, max=1
+New sym int someX_3_SYMREF.next min=-2147483648, max=2147483647
+ALOAD pcHeap: constraint # = 2
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+M: new symbolicheap.HeapAndThreads$X@43704
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = someX_3_SYMREF &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:61 sat:45 unsat:16
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:62 sat:46 unsat:16
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:63 sat:47 unsat:16
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:64 sat:47 unsat:17
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_3_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_3_SYMREF.next.pass min=0, max=1
+New sym int someX_3_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_3_SYMREF.next != someX_3_SYMREF &&
+someX_3_SYMREF.next = CONST_1 &&
+someX_3_SYMREF.next != CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:65 sat:48 unsat:17
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:66 sat:49 unsat:17
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:67 sat:50 unsat:17
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:68 sat:50 unsat:18
+
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = someX_3_SYMREF &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:69 sat:51 unsat:18
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:70 sat:52 unsat:18
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:71 sat:53 unsat:18
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:72 sat:53 unsat:19
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_3_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_3_SYMREF.next.pass min=0, max=1
+New sym int someX_3_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_3_SYMREF.next != someX_3_SYMREF &&
+someX_3_SYMREF.next = CONST_1 &&
+someX_3_SYMREF.next != CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:73 sat:54 unsat:19
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:74 sat:55 unsat:19
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:75 sat:56 unsat:19
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:76 sat:56 unsat:20
+
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = someX_3_SYMREF &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:77 sat:57 unsat:20
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:78 sat:58 unsat:20
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:79 sat:59 unsat:20
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:80 sat:59 unsat:21
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_3_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_3_SYMREF.next.pass min=0, max=1
+New sym int someX_3_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_3_SYMREF.next != someX_3_SYMREF &&
+someX_3_SYMREF.next = CONST_1 &&
+someX_3_SYMREF.next != CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:81 sat:60 unsat:21
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:82 sat:61 unsat:21
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:83 sat:62 unsat:21
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:84 sat:62 unsat:22
+
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = someX_3_SYMREF &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:85 sat:63 unsat:22
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:86 sat:64 unsat:22
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:87 sat:65 unsat:22
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:88 sat:65 unsat:23
+
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+lazy initialization
+New sym int someX_3_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_3_SYMREF.next.pass min=0, max=1
+New sym int someX_3_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_3_SYMREF.next != someX_3_SYMREF &&
+someX_3_SYMREF.next = CONST_1 &&
+someX_3_SYMREF.next != CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:89 sat:66 unsat:23
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:90 sat:67 unsat:23
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:91 sat:68 unsat:23
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:92 sat:68 unsat:24
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = someX_3_SYMREF &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:93 sat:69 unsat:24
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:94 sat:70 unsat:24
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:95 sat:71 unsat:24
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:96 sat:71 unsat:25
+
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:97 sat:72 unsat:25
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:98 sat:73 unsat:25
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:99 sat:74 unsat:25
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:100 sat:74 unsat:26
+
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:101 sat:75 unsat:26
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:102 sat:75 unsat:27
+
+M: x.pass=true
+M: x.pass=true
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+M: x.pass=true
+lazy initialization
+New sym int someX_3_SYMREF.next min=-2147483648, max=2147483647
+New sym int someX_3_SYMREF.next.pass min=0, max=1
+New sym int someX_3_SYMREF.next.next min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+someX_3_SYMREF.next != someX_3_SYMREF &&
+someX_3_SYMREF.next = CONST_1 &&
+someX_3_SYMREF.next != CONST_-1 &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:103 sat:76 unsat:27
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:104 sat:77 unsat:27
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:105 sat:78 unsat:27
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:106 sat:78 unsat:28
+
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:107 sat:79 unsat:28
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:108 sat:80 unsat:28
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:109 sat:81 unsat:28
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:110 sat:81 unsat:29
+
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:111 sat:82 unsat:29
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+numeric PC: constraint # = 2
+someX_3_SYMREF.pass = CONST_0 &&
+someX_3_SYMREF.pass != CONST_0 -> false
+
+### PCs: total:112 sat:82 unsat:30
+
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+M: x.pass=true
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+someX_3_SYMREF.next = someX_3_SYMREF &&
+someX_3_SYMREF = CONST_0 &&
+someX_3_SYMREF != CONST_-1
+M: x.pass=true
+T: accessed global myX
+M: x.pass=true
+T: accessed global myX
+M: x.pass=true
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass = CONST_0 -> true
+
+### PCs: total:113 sat:83 unsat:30
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass = CONST_0
+numeric PC: constraint # = 1
+someX_3_SYMREF.pass != CONST_0 -> true
+
+### PCs: total:114 sat:84 unsat:30
+
+string analysis: SPC # = 0
+NPC constraint # = 1
+someX_3_SYMREF.pass != CONST_0
+T: accessed global myX
+M: x.pass=true
+M: x.pass=true
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.AssertionError: gotcha
+	at symbolicheap.HeapAndThreads$InstanceFieldPropagation.run(HeapAndThreads.java:46)
+
+
+====================================================== snapshot #1
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at symbolicheap.HeapAndThreads.main(HeapAndThreads.java:67)
+
+thread symbolicheap.HeapAndThreads$InstanceFieldPropagation:{id:1,name:Thread-1,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at symbolicheap.HeapAndThreads$InstanceFieldPropagation.run(HeapAndThreads.java:46)
+
+
+====================================================== results
+error #1: gov.nasa.jpf.vm.NoUncaughtExceptionsProperty "java.lang.AssertionError: gotcha  at symbolicheap...."
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=278,visited=0,backtracked=263,end=108
+search:             maxDepth=16,constraints=0
+choice generators:  thread=128 (signal=0,lock=1,sharedRef=59,threadApi=1,reschedule=67), data=42
+heap:               new=646,released=1307,maxLive=375,gcCycles=262
+instructions:       5346
+max memory:         240MB
+loaded code:        classes=68,methods=1487
+
+====================================================== search finished: 10/9/19 3:25 AM

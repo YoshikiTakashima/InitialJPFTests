@@ -1,0 +1,397 @@
+Running Symbolic PathFinder ...
+symbolic.dp=choco
+symbolic.string_dp_timeout_ms=0
+symbolic.string_dp=none
+symbolic.choco_time_bound=30000
+symbolic.max_pc_length=2147483647
+symbolic.max_pc_msec=0
+symbolic.bvlength=32
+symbolic.min_int=-2147483648
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=2147483647
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+symbolicheap.NodeBuggy.main()
+
+====================================================== search started: 10/9/19 3:25 AM
+New sym int input_X[-1] min=-2147483648, max=2147483647
+New sym int input_X[352] min=-2147483648, max=2147483647
+New sym int input_X[352].elem min=-2147483648, max=2147483647
+New sym int input_X[352].next min=-2147483648, max=2147483647
+New sym int input_X[352].left min=-2147483648, max=2147483647
+New sym int input_X[352].right min=-2147483648, max=2147483647
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 2
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+left = [352]{elem:input_X[352].elem next:*left:[352]right:*}
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+input_X[352].right = input_X[352] &&
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+right = [352]{elem:input_X[352].elem next:*left:[null]right:[352]}
+
+null
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+input_X[352].right = CONST_-1 &&
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+lazy initialization
+New sym int input_X[352].right min=-2147483648, max=2147483647
+New sym int input_X[352].right.elem min=-2147483648, max=2147483647
+New sym int input_X[352].right.next min=-2147483648, max=2147483647
+New sym int input_X[352].right.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+right = [367]{elem:input_X[352].right.elem next:*left:*right:*}
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..3,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].right.left = input_X[352].right &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43682
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].right.left = input_X[352] &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43693
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].right.left = CONST_-1 &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+null
+lazy initialization
+New sym int input_X[352].right.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.elem min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.next min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 9
+input_X[352].right.left != input_X[352] &&
+input_X[352].right.left != input_X[352].right &&
+input_X[352].right.left = CONST_2 &&
+input_X[352].right.left != CONST_-1 &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = input_X[352] &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43711
+lazy initialization
+GETFIELD pcHeap: constraint # = 2
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+left = [null]
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..2,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+input_X[352].right = input_X[352] &&
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+right = [352]{elem:input_X[352].elem next:*left:[null]right:[352]}
+
+null
+lazy initialization
+GETFIELD pcHeap: constraint # = 3
+input_X[352].right = CONST_-1 &&
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+lazy initialization
+New sym int input_X[352].right min=-2147483648, max=2147483647
+New sym int input_X[352].right.elem min=-2147483648, max=2147483647
+New sym int input_X[352].right.next min=-2147483648, max=2147483647
+New sym int input_X[352].right.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 5
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+right = [367]{elem:input_X[352].right.elem next:*left:*right:*}
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..3,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].right.left = input_X[352].right &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43682
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].right.left = input_X[352] &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43693
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].right.left = CONST_-1 &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+null
+lazy initialization
+New sym int input_X[352].right.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.elem min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.next min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 9
+input_X[352].right.left != input_X[352] &&
+input_X[352].right.left != input_X[352].right &&
+input_X[352].right.left = CONST_2 &&
+input_X[352].right.left != CONST_-1 &&
+input_X[352].right != input_X[352] &&
+input_X[352].right = CONST_1 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left = CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43711
+lazy initialization
+New sym int input_X[352].left min=-2147483648, max=2147483647
+New sym int input_X[352].left.elem min=-2147483648, max=2147483647
+New sym int input_X[352].left.next min=-2147483648, max=2147483647
+New sym int input_X[352].left.left min=-2147483648, max=2147483647
+New sym int input_X[352].left.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 4
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+left = [371]{elem:input_X[352].left.elem next:*left:*right:*}
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..3,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 5
+input_X[352].right = input_X[352].left &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+right = [371]{elem:input_X[352].left.elem next:*left:*right:*}
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..3,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].left.left = input_X[352].left &&
+input_X[352].right = input_X[352].left &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43710
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].left.left = input_X[352] &&
+input_X[352].right = input_X[352].left &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43693
+lazy initialization
+GETFIELD pcHeap: constraint # = 6
+input_X[352].left.left = CONST_-1 &&
+input_X[352].right = input_X[352].left &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+null
+lazy initialization
+New sym int input_X[352].left.left min=-2147483648, max=2147483647
+New sym int input_X[352].left.left.elem min=-2147483648, max=2147483647
+New sym int input_X[352].left.left.next min=-2147483648, max=2147483647
+New sym int input_X[352].left.left.left min=-2147483648, max=2147483647
+New sym int input_X[352].left.left.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 9
+input_X[352].left.left != input_X[352] &&
+input_X[352].left.left != input_X[352].left &&
+input_X[352].left.left = CONST_2 &&
+input_X[352].left.left != CONST_-1 &&
+input_X[352].right = input_X[352].left &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43711
+lazy initialization
+GETFIELD pcHeap: constraint # = 5
+input_X[352].right = input_X[352] &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+right = [352]{elem:input_X[352].elem next:*left:[null]right:[352]}
+
+null
+lazy initialization
+GETFIELD pcHeap: constraint # = 5
+input_X[352].right = CONST_-1 &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+lazy initialization
+New sym int input_X[352].right min=-2147483648, max=2147483647
+New sym int input_X[352].right.elem min=-2147483648, max=2147483647
+New sym int input_X[352].right.next min=-2147483648, max=2147483647
+New sym int input_X[352].right.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 8
+input_X[352].right != input_X[352] &&
+input_X[352].right != input_X[352].left &&
+input_X[352].right = CONST_2 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+Rooted Heap: 
+right = [367]{elem:input_X[352].right.elem next:*left:*right:*}
+
+lazy initialization
+# heap cg registered: gov.nasa.jpf.symbc.heap.HeapChoiceGenerator[id="?",isCascaded:false,0..4,delta=+1,cur=-1]
+lazy initialization
+GETFIELD pcHeap: constraint # = 9
+input_X[352].right.left = input_X[352].right &&
+input_X[352].right != input_X[352] &&
+input_X[352].right != input_X[352].left &&
+input_X[352].right = CONST_2 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43682
+lazy initialization
+GETFIELD pcHeap: constraint # = 9
+input_X[352].right.left = input_X[352].left &&
+input_X[352].right != input_X[352] &&
+input_X[352].right != input_X[352].left &&
+input_X[352].right = CONST_2 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43710
+lazy initialization
+GETFIELD pcHeap: constraint # = 9
+input_X[352].right.left = input_X[352] &&
+input_X[352].right != input_X[352] &&
+input_X[352].right != input_X[352].left &&
+input_X[352].right = CONST_2 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43693
+lazy initialization
+GETFIELD pcHeap: constraint # = 9
+input_X[352].right.left = CONST_-1 &&
+input_X[352].right != input_X[352] &&
+input_X[352].right != input_X[352].left &&
+input_X[352].right = CONST_2 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+null
+lazy initialization
+New sym int input_X[352].right.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.elem min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.next min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.left min=-2147483648, max=2147483647
+New sym int input_X[352].right.left.right min=-2147483648, max=2147483647
+GETFIELD pcHeap: constraint # = 13
+input_X[352].right.left != input_X[352] &&
+input_X[352].right.left != input_X[352].left &&
+input_X[352].right.left != input_X[352].right &&
+input_X[352].right.left = CONST_3 &&
+input_X[352].right.left != CONST_-1 &&
+input_X[352].right != input_X[352] &&
+input_X[352].right != input_X[352].left &&
+input_X[352].right = CONST_2 &&
+input_X[352].right != CONST_-1 &&
+input_X[352].left != input_X[352] &&
+input_X[352].left = CONST_1 &&
+input_X[352].left != CONST_-1 &&
+input_X[352] != CONST_-1
+symbolicheap.NodeBuggy@43711
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=35,visited=0,backtracked=35,end=24
+search:             maxDepth=6,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=11
+heap:               new=428,released=264,maxLive=364,gcCycles=33
+instructions:       3723
+max memory:         240MB
+loaded code:        classes=62,methods=1431
+
+====================================================== search finished: 10/9/19 3:25 AM
