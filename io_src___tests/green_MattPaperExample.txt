@@ -1,0 +1,22 @@
+Using Green Framework...
+[20191014 23:41:00][za.ac.sun.cs.green.Green <init>][FINEST] Solver("anonymous1") created
+symbolic.min_int=0
+symbolic.min_long=-9223372036854775808
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=1000
+symbolic.max_long=9223372036854775807
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=4.9E-324
+symbolic.max_double=1.7976931348623157E308
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.symbc.green.MattPaperExample.main()
+
+====================================================== search started: 10/14/19 11:41 PM
+[20191014 23:41:01][za.ac.sun.cs.green.taskmanager.SerialTaskManager process][INFO] processing serviceName="sat"

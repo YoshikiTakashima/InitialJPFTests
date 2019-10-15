@@ -7,6 +7,10 @@ ExSymExeCoral.jpf
 ExException.jpf
 ExSymExeComplexMath.jpf
 ExSymExeTestClassFields.jpf
+daisyChain.jpf
+ExLazy.jpf
+ExSymExe.jpf
+ExSymExeSuzette.jpf
 bitop/TestBitwiseOR1.jpf
 bitop/TestBitwiseXOR.jpf
 bitop/TestBitwiseAND1.jpf
@@ -20,10 +24,6 @@ bitop/TestBitwiseLOR.jpf
 bitop/TestBitwiseADD.jpf
 bitop/TestBitwiseAND.jpf
 bitop/TestBitwiseSHIFTL.jpf
-daisyChain.jpf
-ExLazy.jpf
-ExSymExe.jpf
-ExSymExeSuzette.jpf
 TreeMap.jpf
 green/MattPaperExample.jpf
 TestMethodInvocation.jpf
